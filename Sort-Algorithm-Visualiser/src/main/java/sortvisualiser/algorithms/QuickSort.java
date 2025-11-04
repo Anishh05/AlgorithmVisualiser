@@ -2,11 +2,7 @@ package sortvisualiser.algorithms;
 
 import sortvisualiser.SortArray;
 
-/**
- * Quick sort implementation
- *
- * @author mhops
- */
+
 public class QuickSort implements ISortAlgorithm {
 
     private long stepDelay = 30;
