@@ -3,20 +3,12 @@ import java.util.Arrays;
 
 import sortvisualiser.SortArray;
 
-/**
- * Radix sort implementation
- *
- * @author Randy Bushman
- */
 public class RadixSort implements ISortAlgorithm {
 
 	private long stepDelay = 5;
 	private int radix;	
 	private int[] countingArr;
 
-	/**
-	 * @param radix The number system that you wish to work in. Must be greater than zero.
-	 */
 	public RadixSort(int radix)
 	{
 		this.radix = radix;
@@ -91,3 +83,4 @@ public class RadixSort implements ISortAlgorithm {
 		this.stepDelay = delay;
 	}
 }
+
