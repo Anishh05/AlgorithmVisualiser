@@ -1,11 +1,6 @@
 package sortvisualiser.algorithms;
 import sortvisualiser.SortArray;
 
-/**
- * Iterative Merge sort implementation
- *
- * @author Randy Bushman
- */
 public class IterativeMergeSort implements ISortAlgorithm
 {
 	private long stepDelay = 5;
@@ -82,3 +77,4 @@ public class IterativeMergeSort implements ISortAlgorithm
 		this.stepDelay = delay;
 	}
 }
+
