@@ -2,18 +2,12 @@ package sortvisualiser.algorithms;
 
 import sortvisualiser.SortArray;
 
-/**
- * Merge sort implementation
- *
- * @author Matthew Hopson
- */
 public class MergeSort implements ISortAlgorithm {
 
     private long stepDelay = 20;
     /**
      * Returns a subsequence of the array take from input. The original array is cut starting
      * from begin position indicated by the homonymous parameter up to (begin + size) position.
-     *
      * @param array this is the array tu cut
      * @param begin it represents the start position of the subsequence
      * @param size  is the length of the subsequence
@@ -70,20 +64,7 @@ public class MergeSort implements ISortAlgorithm {
         }
     }
 
-    /**
-     * Merge sort is a "divide and conquer" algorithm, it works by splitting the array into tiny sections
-     * sorting them indivually, and then finally merges it back together, see
-     * <a href="https://en.wikipedia.org/wiki/Merge_sort">Merge_sort</a> to understand more.
-     * The method takes a SortArray object called array and sorts his elements according to the mathematical theory
-     * of the order "less than", see <a href="https://en.wikipedia.org/wiki/Order_theory">Order_theory</a> to
-     * understand more.
-     * Recursion was adopted for simplicity
-     *
-     * @param array the array to be sorted
-     * @param left  the left index of the array
-     * @param right the right index of the array
-     * @see SortArray
-     */
+
     private void mergeSort(SortArray array, int left, int right) {
         if (left < right) {
             int middleIndex = (left + right) / 2;
@@ -94,18 +75,6 @@ public class MergeSort implements ISortAlgorithm {
         }
     }
 
-    /**
-     * This is the method that call the first instance of mergeSort.
-     * Merge sort is a "divide and conquer" algorithm, it works by splitting the array into tiny sections
-     * sorting them indivually, and then finally merges it back together, see
-     * <a href="https://en.wikipedia.org/wiki/Merge_sort">Merge_sort</a> to understand more.
-     * The method takes a SortArray object called array and sorts his elements according to the mathematical theory
-     * of the order "less than", see <a href="https://en.wikipedia.org/wiki/Order_theory">Order_theory</a> to
-     * understand more.
-     *
-     * @param array the array to be sorted
-     * @see SortArray
-     */
     @Override
     public void runSort(SortArray array) {
         int left = 0;
